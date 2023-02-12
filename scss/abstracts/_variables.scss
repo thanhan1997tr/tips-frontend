@@ -1,0 +1,7 @@
+//font
+$fontOpenSans: 'Open Sans';
+
+$fontBaskerville : 'Baskerville';
+
+//Sẽ apply thuộc tính font trong thẻ body. Vì bootstrap dùng biến này để set font-family
+$font-family-base: $fontOpenSans !default;
