@@ -6,3 +6,17 @@
 //Base
 @import 'base/fonts';
 @import 'base/base';
+@import 'base/typography';
+
+//Themes
+@import 'themes/theme';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+
+//component
+@import 'components/demo-font';
+@import 'components/background';
+@import 'components/selector-not';

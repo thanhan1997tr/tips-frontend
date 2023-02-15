@@ -8,12 +8,59 @@
           <title>Tips FrontEnd</title>
      </head>
      <body>
-          <ol>
-               <li><a href="./font.html">Font</a></li>
-          </ol>
+          <header>header</header>
 
+          <main>
+               <section class="demo-font d-none">
+                    <h2>1. Ví dụ sử dụng font đúng cách.</h2>
+                    <h3>font Open Sans</h3>
+                    <hr />
+                    <h3 class="f-baskerville">Font Baskerville</h3>
+               </section>
 
+               <section class="background d-none">
+                    <h2>2. Ví dụ dùng backgound-image và image?</h2>
+                    <img
+                         src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                         alt="glacial lake surrounded by mountain in nature photography"
+                         width="587"
+                         height="390"
+                    />
+                    <!-- Thêm alt để khi hình ảnh không tải lên được thì nó sẽ hiển thị thông tin hình ảnh -->
+                    <!-- Thêm width, height để khi css chưa được load thì cấu trúc html sẽ không thay đổi. Chủ yếu là khi hình không tải lên được thì vẫn không thay đổi layout -->
 
+                    <div class="background-image-ratio">
+                         <div class="image"></div>
+                    </div>
+
+                    <div class="background-video-ratio">
+                         <div class="video">
+                              <iframe
+                                   width="560"
+                                   height="315"
+                                   src="https://www.youtube.com/embed/-Vy75pZOjRo?controls=0"
+                                   title="YouTube video player"
+                                   frameborder="0"
+                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                   allowfullscreen
+                              ></iframe>
+                         </div>
+                    </div>
+               </section>
+
+               <section class="selector-not">
+                    <h2>3. Ví dụ về sử dụng Selector :not() và phân biệt :last-child và :last-of-type</h2>
+                    <ul>
+                         <li>Text 1</li>
+                         <li>Text 2</li>
+                         <li>Text 3</li>
+                         <li>Text 4</li>
+                         <li>Text 5</li>
+                    </ul>
+               </section>
+          </main>
+
+          <footer>footer</footer>
 
           <script
                src="https://code.jquery.com/jquery-3.6.3.min.js"
