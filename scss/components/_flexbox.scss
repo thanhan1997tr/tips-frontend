@@ -1,0 +1,29 @@
+.flexbox {
+     border: 1px solid;
+     min-height: 700px;
+
+     &-item {
+          padding: 20px;
+
+          font-family: $fontBaskerville;
+          font-size: 50px;
+          font-weight: 600;
+          color: #fff;
+     }
+
+     &-item-1 {
+          background-color: #22b9a8;
+     }
+     &-item-2 {
+          background-color: #424957;
+     }
+     &-item-3 {
+          background-color: #487242;
+     }
+     &-item-4 {
+          background-color: #dd9e7b;
+     }
+     &-item-5 {
+          background-color: #72be7a;
+     }
+}

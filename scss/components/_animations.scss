@@ -1,0 +1,70 @@
+.animations {
+     text-align: center;
+     padding-top: 100px;
+
+     button {
+          @extend .button;
+          position: relative;
+
+          &:hover,
+          &:focus {
+               background-color: cadetblue;
+               border-color: cadetblue;
+          }
+
+          &:active {
+               top: 2px;
+          }
+     }
+
+     &-fish {
+          height: 500px;
+          position: relative;
+          overflow: hidden;
+
+          img {
+               width: 200px;
+               position: absolute;
+               top: 200px;
+               left: -200px;
+               animation-name: fish; //xác định thành phần sẽ thực thi animation
+               animation-duration: 10s; //thiết lập khoảng thời gian thực thị 1 chuyển động animation
+               animation-iteration-count: infinite; //Lặp lại vô hạn
+               // animation-iteration-count: 1; /* Chỉ chạy một lần */
+               // animation-fill-mode: forwards; /* Giữ lại trạng thái cuối cùng */
+               // animation-timing-function: cubic-bezier(.02,1.15,1,-1.27); /* Chạy với tốc độ đều */
+          }
+     }
+}
+
+@keyframes fish {
+     from {
+          left: -200px;
+     }
+
+     40% {
+          top: 300px;
+          left: 50%;
+          transform: rotateY(0);
+     }
+
+     50% {
+          left: 50%;
+          transform: rotateY(180deg);
+     }
+
+     60% {
+          left: calc(50% - 200px);
+          transform: rotateY(180deg);
+     }
+
+     70% {
+          left: calc(50% - 200px);
+          transform: rotateY(0);
+     }
+
+     to {
+          left: 100%;
+          transform: translateX(0);
+     }
+}

@@ -1,0 +1,13 @@
+.units {
+     font-size: 20px;
+     &-demo {
+          font-size: 30px;
+          &::after {
+               content: "";
+               display: block;
+               width: 100px;
+               height: 80px;
+               background-color: antiquewhite;
+          }
+     }
+}

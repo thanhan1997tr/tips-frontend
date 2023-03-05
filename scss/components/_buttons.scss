@@ -1,0 +1,50 @@
+.button {
+     cursor: pointer;
+     padding: 15px 30px;
+
+     font-size: 16px;
+     text-transform: uppercase;
+
+     color: #fff;
+     background-color: #4d4d4d;
+
+     border: 1px solid #4d4d4d;
+     border-radius: 30px;
+
+     &:focus {
+          outline: 0;
+     }
+
+     &-red {
+          background-color: #ee3a43;
+          border: 1px solid #ee3a43;
+     }
+
+     &-animated-1 {
+          position: relative;
+
+          &:after {
+               content: "";
+               display: inline-block;
+
+               height: 100%;
+               width: 100%;
+               border-radius: 30px;
+
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: -1;
+
+               transition: all 0.4s;
+               background-color: #ee3a43;
+          }
+
+          &:hover {
+               &:after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+               }
+          }
+     }
+}
